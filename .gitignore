@@ -1,3 +1,4 @@
 build/
 test/*.log
 test/*.html
+test/vtune*/

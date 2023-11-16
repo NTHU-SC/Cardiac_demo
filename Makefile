@@ -1,5 +1,5 @@
-CXXFLAGS = -g -std=c++11 -qopenmp -parallel-source-info=2
 MPICXX = mpiicpc
+CXXFLAGS += -g -std=c++11 -qopenmp -parallel-source-info=2
 
 .PHONY: clean
 
