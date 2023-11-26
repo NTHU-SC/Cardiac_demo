@@ -1,7 +1,9 @@
 # Advanced High Performance Computing Cluster Practice
 ## Brief Introduction to Intel® VTune™ Profilers
 
-Here are some frequently-used code snippets.
+There are some scripts in [test](test/) for your reference.
+
+Below are some frequently-used code snippets.
 
 ## Set up envrionment variables
 
