@@ -1,13 +1,12 @@
 #!/bin/bash
-#SBATCH -J heart_demo_n56
+#SBATCH -J heart_demo_n28
 #SBATCH -A ACD114003
 #SBATCH -p hpcxai1
-#SBATCH -o heart_demo_n56_out_%j.log
-#SBATCH -e heart_demo_n56_err_%j.log
+#SBATCH -o heart_demo_n28_out_%j.log
+#SBATCH -e heart_demo_n28_err_%j.log
 #SBATCH -N 4
-#SBATCH -n 56
-#SBATCH -c 8
-
+#SBATCH -n 28
+#SBATCH -c 16
 
 module load intel/2022_3_1
 source /pkg/compiler/intel/2022_3_1/setvars.sh

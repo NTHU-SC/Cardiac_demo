@@ -1,14 +1,15 @@
 #!/bin/bash
 #SBATCH -J heart_demo_n112
-#SBATCH -A ACD110018
-#SBATCH -p ct224
+#SBATCH -A ACD114003
+#SBATCH -p hpcxai1
 #SBATCH -o heart_demo_n112_out_%j.log
 #SBATCH -e heart_demo_n112_err_%j.log
 #SBATCH -N 4
 #SBATCH -n 112
-#SBATCH -c 2
+#SBATCH -c 4
 
-. /opt/ohpc/Taiwania3/pkg/intel/2022.2/setvars.sh
+module load intel/2022_3_1
+source /pkg/compiler/intel/2022_3_1/setvars.sh
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 echo n=$SLURM_NTASKS
 
